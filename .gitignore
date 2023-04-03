@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+#db_connection
+/db.properties
+
 # Log file
 *.log
 
