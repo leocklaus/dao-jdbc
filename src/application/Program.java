@@ -2,6 +2,7 @@ package application;
 
 import java.util.List;
 
+import db.DB;
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Seller;
@@ -31,6 +32,8 @@ public class Program {
 		List<Seller> sellers = sellerDao.findAll();
 		
 		sellers.forEach(sl -> System.out.println(sl));
+		
+		DB.closeConnection();
 
 	}
 
