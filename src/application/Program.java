@@ -20,10 +20,12 @@ public class Program {
 		
 		System.out.println("Inserted. New Id: " + newSeller.getId()); */
 		
-		Seller seller = sellerDao.findById(1);
+		/*Seller seller = sellerDao.findById(1);
 		seller.setName("Martha Waine");
 		
-		sellerDao.update(seller);
+		sellerDao.update(seller);*/
+		
+		sellerDao.deleteById(7);
 		
 		
 		List<Seller> sellers = sellerDao.findAll();
